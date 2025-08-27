@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const ConnectedDB = async()=>{
+const ConnectedDB = async(url)=>{
     try{
-await  mongoose.connect("mongodb+srv://mantasha_kira:<izaan_man>@storeapi.vcxsxvs.mongodb.net/?retryWrites=true&w=majority&appName=StoreApi");
+await  mongoose.connect(url);
 console.log("connected");
 
     }

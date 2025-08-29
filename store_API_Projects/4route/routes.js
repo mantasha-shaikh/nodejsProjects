@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const router = express.Router()
 
-router.route('/').get(getAllProductsStatic)
+router.route('/').get(getAllProducts)
 router.route('/static').get(getAllProductsStatic)
 
 module.exports=router

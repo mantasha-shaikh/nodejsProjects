@@ -19,6 +19,7 @@ const getAllTasks = asyncWrapper(async (req, res) => {
 const createTask = asyncWrapper(async (req, res) => {
   
         const task = await Task.create(req.body);
+        
         res.status(200).json({ task }); // check in Postman (Body -> raw -> JSON)
         console.log(task);
    
